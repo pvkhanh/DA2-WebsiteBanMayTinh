@@ -1,0 +1,86 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 20px 0;
+    text-align: right;
+    /* Đưa phân trang sang bên phải */
+    width: 100%;
+    /* Đảm bảo phân trang chiếm toàn bộ chiều rộng của phần tử cha */
+}
+
+
+/* Định dạng cho mỗi trang */
+
+.pagination li {
+    display: inline;
+    margin: 0 2px;
+}
+
+
+/* Định dạng cho các liên kết phân trang */
+
+.pagination li a {
+    color: #007bff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Định dạng khi hover vào liên kết */
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Định dạng cho trang đang được chọn */
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+
+/* Định dạng cho liên kết phân trang bị vô hiệu hóa (trang đầu và cuối) */
+
+.pagination li.disabled a {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
